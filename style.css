@@ -1,0 +1,157 @@
+/*  Page global style  */
+body {
+  height: 100vh;
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+  z-index: 1;
+  transition: transform 0.3s ease-out;
+  background-size: 100% 100%;
+  background-image: url("https://source.unsplash.com/1600x900/?landscape");
+  color: white;
+  min-width: 530px;
+}
+
+/* To add an overlay on the backroung image and make it look beautiful */
+.background-overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  background-image: url("./assets/background-shadow.png");
+  background-size: 100% 100%;
+  opacity: 1;
+  transition: opacity 0.3s ease-out;
+}
+
+/* Display page elements in a column and center them*/ 
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+h1 {
+  text-transform: uppercase;
+  font-size: 60px;
+}
+
+/* Search area style */
+.search-area {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+button {
+  border-radius: 50%;
+  border: none;
+  height: 70px;
+  width: 70px;
+  background: #ffffff1a;
+  color: white;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+button:hover {
+  background: #635f5f2b;
+}
+.focus-input {
+  width: 100%;
+  display: block;
+  background: 0;
+  border: 0;
+  border-bottom: 2px solid #fff;
+  color: #fff;
+  font-size: 2.25em;
+  line-height: 1.2;
+  font-weight: 500;
+  outline: none;
+  text-align: center;
+  transition: border-color 0.2s ease;
+}
+
+/* Card area: loading and results */
+.card {
+  background: #0000006b;
+  color: white;
+  padding: 2em;
+  border-radius: 30px;
+  width: 100%;
+  max-width: 420px;
+  margin: 1em;
+  display: none;
+}
+
+.align {
+  display: flex;
+  align-items: center;
+  margin-left: -6px;
+}
+
+.description {
+  text-transform: capitalize;
+  margin-left: 8px;
+}
+
+.loading,
+.weather {
+  display: none;
+}
+
+/* Loading animation */
+.emoji-rolling {
+  position: relative;
+  top: 0;
+  left: 180px;
+  font-size: 50px;
+}
+
+.emoji-rolling::before {
+  content: "🌩️";
+  display: inline-block;
+  position: relative;
+  transform: translateX(-150px);
+  animation: emojiRolling 10s infinite;
+}
+
+@keyframes emojiRolling {
+  0% {
+    content: "🌧️";
+    transform: translateX(-150px);
+  }
+  16.667% {
+    content: "🌨️";
+    transform: translateX(150px);
+  }
+  33.333% {
+    content: "☁️";
+    transform: translateX(-150px);
+  }
+  34.333% {
+    content: "🌩️";
+    transform: translateX(-150px);
+  }
+  50% {
+    content: "🌩️";
+    transform: translateX(150px);
+  }
+  66.667% {
+    content: "⛅";
+    transform: translateX(-150px);
+  }
+  67.667% {
+    content: "⛅";
+    transform: translateX(-150px);
+  }
+  83.333% {
+    content: "☀️";
+    transform: translateX(150px);
+  }
+  100% {
+    content: "☀️";
+    transform: translateX(-150px);
+  }
+}
