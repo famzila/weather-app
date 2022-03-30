@@ -3,8 +3,9 @@
 ## Weather app
 This app is a part of the 2022 Web Program projects:
 
-![Weather app in HTML, CSS and JS](assets\weather-app-ui.png)
+![Weather app in HTML, CSS and JS](https://github.com/famzila/weather-app/blob/main/assets/weather-app-ui.png)
 
+## [App online](https://weather-app-tan-eight-80.vercel.app/)
 
 In this project, we'll be applying all what you've learned so far from 
 - [General web knowledge](https://github.com/famzila/2022-WEB-PROGRAM/tree/main/Chapter1)
@@ -21,8 +22,8 @@ The app structure:
 
 ## The application demo:
 
-![Weather app in HTML, CSS and JS](assets\weather-app-demo.gif)
+![Weather app in HTML, CSS and JS](https://github.com/famzila/weather-app/blob/main/assets/weather-app-demo.gif)
 
 ## The application demo with Geolocalization:
 
-![Weather app in HTML, CSS and JS](assets\weather-app-geo-demo.gif)
+![Weather app in HTML, CSS and JS](https://github.com/famzila/weather-app/blob/main/assets/weather-app-geo-demo.gif)
