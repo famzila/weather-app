@@ -3,9 +3,8 @@
 ## Weather app
 This app is a part of the 2022 Web Program projects:
 
+## [See app online](https://weather-app-tan-eight-80.vercel.app/)
 ![Weather app in HTML, CSS and JS](https://github.com/famzila/weather-app/blob/main/assets/weather-app-ui.png)
-
-## [App online](https://weather-app-tan-eight-80.vercel.app/)
 
 In this project, we'll be applying all what you've learned so far from 
 - [General web knowledge](https://github.com/famzila/2022-WEB-PROGRAM/tree/main/Chapter1)
