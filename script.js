@@ -4,7 +4,7 @@
 // displayWeather(): populates and displayed the weather
 let weather = {
   // The API KEY to access the OpenWeatherMap data
-  apiKey: "f66b4159ddd7d5b0e57ee355463b98e3",
+  apiKey: "ADD YOUR API KEY",
 
   // Function to launch query and get weather data for the typed city.
   fetchWeatherByCity: function (city) {
